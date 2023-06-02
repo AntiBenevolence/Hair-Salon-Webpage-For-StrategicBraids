@@ -14,6 +14,14 @@ body .container {
   max-width: 1100px;
 }
 
+.navigation button {
+  border-radius: 3px;
+  background: #f4c2c2;
+
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
 #filter-buttons button {
   border-radius: 3px;
   background: #f4c2c2;
