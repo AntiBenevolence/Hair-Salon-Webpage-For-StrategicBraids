@@ -132,8 +132,8 @@ section {
   align-items: center;
   background: linear-gradient(
       0deg,
-      rgba(244, 194, 194, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(244, 194, 194, 0.4),
+      rgba(0, 0, 0, 0.6)
     ),
     url(Img2.0/325982150_1538017353349159_833995351915710920_n.jpg) no-repeat;
 
@@ -185,6 +185,7 @@ section {
 
 .home .home-nav a button:hover {
   background: transparent;
+  color: var(--primary-color);
   border: 2px solid var(--white);
 }
 
@@ -223,6 +224,7 @@ section {
 .about .row .image img {
   width: 100%;
   border-radius: 60%;
+  box-shadow: 4px 8px 32px 8px #000000;
 }
 .about .row .content {
   flex: 1 1 51rem;
@@ -286,6 +288,7 @@ section {
   height: 100%;
   position: relative;
   overflow: hidden;
+  box-shadow: 6px 3px 12px 2px #000000;
 }
 
 .services .box-container .box img {
@@ -664,6 +667,10 @@ section {
     padding: 3rem 2rem;
   }
 
+  .home .content h3 {
+    font-size: 7rem;
+  }
+
   .home .home-nav {
     padding-left: 10rem;
     margin-left: 60rem;
@@ -673,7 +680,7 @@ section {
     margin-left: 1rem;
     margin-top: 1rem;
     height: 6vh;
-    width: 18vh;
+    width: 12vh;
   }
 
   .about .content .icons-container {
@@ -737,6 +744,38 @@ section {
     color: var(--white);
     padding-top: 20rem;
     text-transform: capitalize;
+  }
+}
+
+@media (max-width: 932px) {
+  .home .content h3 {
+    font-size: 4.5rem;
+  }
+
+  .home .home-nav {
+    padding-left: 10rem;
+    margin-left: 50rem;
+  }
+
+  .home .home-nav a button {
+    height: 8vh;
+    width: 25vh;
+  }
+}
+
+@media (max-width: 926px) {
+  .home .content h3 {
+    font-size: 4.5rem;
+  }
+
+  .home .home-nav {
+    padding-left: 10rem;
+    margin-left: 50rem;
+  }
+
+  .home .home-nav a button {
+    height: 8vh;
+    width: 25vh;
   }
 }
 
@@ -871,6 +910,15 @@ section {
     width: 24vh;
   }
 }
+
+@media (max-width: 852px) {
+  .footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 851px) {
   .footer .box-container {
     display: grid;
@@ -884,6 +932,28 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 2rem;
+  }
+}
+
+@media (max-width: 834px) {
+  .home {
+    background-position: 85% 50%;
+  }
+
+  .home .content h3 {
+    font-size: 6rem;
+  }
+
+  .home .home-nav {
+    padding-left: 10rem;
+    margin-left: 55rem;
+  }
+
+  .home .home-nav a button {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    height: 4vh;
+    width: 16vh;
   }
 }
 
@@ -922,6 +992,27 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 2rem;
+  }
+}
+
+@media (max-width: 812px) {
+  .home {
+    background-position: 50% 10%;
+  }
+
+  .home .content h3 {
+    font-size: 4rem;
+  }
+
+  .home .home-nav a button {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    height: 12vh;
+    width: 24vh;
+  }
+
+  .about .row .image {
+    flex: 1 1 36rem;
   }
 }
 
@@ -1004,6 +1095,26 @@ section {
     position: relative;
     z-index: 1;
     background: var(--primary-color);
+  }
+}
+
+@media (max-width: 780px) {
+  .about .row .image {
+    flex: 1 1 32rem;
+  }
+
+  .services .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 2rem;
+  }
+
+  .services .box-container .box .content h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--white);
+    padding-top: 15rem;
+    text-transform: capitalize;
   }
 }
 
@@ -1210,9 +1321,101 @@ section {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 430px) {
+  .home .content h3 {
+    font-size: 4.5rem;
+  }
+
+  .home .home-nav {
+    padding-left: 10rem;
+    margin-left: 25rem;
+  }
+
+  .home .home-nav a button {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    height: 5vh;
+    width: 11vh;
+  }
+
   .home {
     background-position: 90% 30%;
+  }
+
+  .services .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 2rem;
+  }
+
+  .services .box-container .box .content h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--white);
+    padding-top: 10rem;
+    text-transform: capitalize;
+  }
+
+  .pricing .box-container .box ul li {
+    text-align: left;
+    font-size: 10px;
+    padding-left: 15px;
+    margin: 10px auto;
+    color: var(--black);
+    list-style: none;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 428px) {
+  .home .content h3 {
+    font-size: 4.5rem;
+  }
+
+  .home .home-nav {
+    padding-left: 10rem;
+    margin-left: 25rem;
+  }
+
+  .home .home-nav a button {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    height: 5vh;
+    width: 11vh;
+  }
+
+  .home {
+    background-position: 90% 30%;
+  }
+
+  .services .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 2rem;
+  }
+
+  .services .box-container .box .content h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--white);
+    padding-top: 10rem;
+    text-transform: capitalize;
+  }
+
+  .pricing .box-container .box ul li {
+    text-align: left;
+    font-size: 10px;
+    padding-left: 15px;
+    margin: 10px auto;
+    color: var(--black);
+    list-style: none;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 414px) {
+  .home {
+    background-position: 100% 30%;
   }
 
   .home .content h3 {
@@ -1398,7 +1601,7 @@ section {
 
 @media (max-width: 375px) {
   .home {
-    background-position: 100% 50%;
+    background-position: 90% 50%;
   }
 
   .home .content h3 {
@@ -1408,13 +1611,7 @@ section {
   .home .home-nav {
     padding-left: 20rem;
     margin-left: 12rem;
-  }
-
-  .home .home-nav a button {
-    margin-left: 1rem;
-    margin-top: 1rem;
-    height: 6vh;
-    width: 12vh;
+    display: none;
   }
 
   .services .box-container {
@@ -1448,6 +1645,17 @@ section {
   .home .home-nav {
     padding-left: 10rem;
     margin-left: 20rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .home .content h3 {
+    font-size: 3.5rem;
+  }
+
+  .home .home-nav a button {
+    height: 6vh;
+    width: 9vh;
   }
 }
 
