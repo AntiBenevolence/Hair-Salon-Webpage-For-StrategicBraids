@@ -132,7 +132,7 @@ section {
   align-items: center;
   background: linear-gradient(
       0deg,
-      rgba(244, 194, 194, 0.4),
+      rgba(244, 194, 194, 0.6),
       rgba(0, 0, 0, 0.6)
     ),
     url(Img2.0/325982150_1538017353349159_833995351915710920_n.jpg) no-repeat;
@@ -353,7 +353,7 @@ section {
 }
 
 .pricing .box-container .box .price .currency {
-  font-size: 35px;
+  font-size: 32px;
   line-height: 35px;
   font-weight: 300;
 }
@@ -488,7 +488,7 @@ section {
 }
 
 .footer .credit span {
-  color: var(--primary-color);
+  color: var(--black);
 }
 
 /* optimization start */
