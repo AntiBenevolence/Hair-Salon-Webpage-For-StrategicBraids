@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&display=swap");
+
+:root {
+  --main-color: #ffd700;
+  --primary-color: #ffffff;
+  --secondary-color: #f4c2c2;
+  --hover: #fffff4;
+  --black: #000000;
+  --white: #fff;
+  --light-bg: #f3efec;
+  --dark-bg: rgba(0, 0, 0, 0.7);
+  --border: 1rem solid #aaa;
+  --box-shadow: 0 0.05rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Playfair", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  transition: all 0.2s linear;
+}
+
+html {
+  font: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+html::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: (var(--primary-color));
+}
+
+section {
+  padding: 5rem 7%;
+}
+
+.heading {
+  text-align: center;
+  color: var(--primary-color);
+  text-transform: capitalize;
+  margin-bottom: 3 rem;
+  margin-top: 3rem;
+  font-size: 4rem;
+}
+
+/* header start */
+.header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--main-color);
+  z-index: 1000;
+}
+
+.header .logo {
+  font-family: 2.5rem;
+  font-weight: bolder;
+  color: (var(--black));
+  text-transform: capitalize;
+}
+
+.header .navbar #close-navbar {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: (var(--black));
+  display: none;
+}
+
+.header .navbar a {
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+.header .navbar a:hover {
+  padding-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+#menu-btn {
+  font-size: 2.5 rem;
+  cursor: pointer;
+  color: var(--black);
+  display: none;
+}
+/* header end */
+
+/* home start */
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(Imgs/homepage_pic.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.home .content {
+  max-width: 60rem;
+}
+
+.home .content span {
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: (var(--black));
+  text-transform: uppercase;
+}
+
+.home .content h3 {
+  color: var(--secondary-color);
+  font-size: 8rem;
+  line-height: 8rem;
+  font-weight: 900;
+}
+
+#welcome-span {
+  color: var(--secondary-color);
+}
+
+/* home end */
+
+/* about me start */
+
+.about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(Imgs/beehive.jpg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about .row .image {
+  flex: 1 1 39rem;
+}
+
+.about .row .image img {
+  width: 90%;
+  border-radius: 50%;
+}
+
+.about .row .content {
+  flex: 1 1 51rem;
+  padding: 5 rem;
+}
+
+.about .row .content h3 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: var(--primary-color);
+}
+
+.about .row .content p {
+  font-size: 1.6rem;
+  color: var(--secondary-color);
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+
+.about .row .content .icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.about .row .content .icons-container .icons {
+  flex: 1 1 16rem;
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding: 3rem 2rem;
+  border-radius: 75%;
+}
+
+.about .row .content .icons-container .icons img {
+  height: 5rem;
+}
+
+.about .row .content .icons-container .icons h3 {
+  padding-top: 1rem;
+  font-size: 1.6rem;
+  color: (var(--main-color));
+  font-weight: normal;
+}
+
+/* about me end */
