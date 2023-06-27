@@ -1,5 +1,7 @@
 # StrategicBraids HairPage Website (Client)
 
+Link to website: [](https://strategicbraids.com/)
+
 This project aims to create a comprehensive landing page for a hairstylist business. The main objective is to provide a centralized platform for potential clients to engage with the hairstylist bookings and access essential information. The key features of the project include:
 
 - **Booking Functionality:** Users can easily schedule appointments with the hairstylist by clicking the button/link with takes the user to the site with an integrated booking system, streamlining the booking process.
