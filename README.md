@@ -24,7 +24,7 @@ This project aims to create a comprehensive landing page for a hairstylist busin
 
 To install and use this project, follow these steps:
 
-1. Download the project files from the [repository]([link-to-your-repository](https://github.com/DrDepressed/Hair-Salon-Webpage-For-StrategicBraids)).
+1. Download the project files from the [repository]([link-to-your-repository](https://github.com/DrDebug/Hair-Salon-Webpage-For-StrategicBraids)).
 2. Extract the downloaded files to your desired location.
 
 That's it! You have successfully installed the project.
